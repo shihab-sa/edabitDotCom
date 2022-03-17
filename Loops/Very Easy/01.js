@@ -13,21 +13,20 @@
 
 
 
-// function printArray(n){
-//     let Traverse = '' 
-//     for(let i=0; i<n; i++){
-//         Traverse = Traverse + i 
-//         console.log(Traverse);
-//     }
-// }
+ function Buggy(n){
+    let result = []
+    let final = ''
+    for(let i=1; i<n; i++){
+        final += result.push(i)
+        console.log(final);
 
-// printArray(6)
+    }
+ }
+
+Buggy(6)
 
 
-let text = ''
-
-for(let i=1; i<=7; i++){
-    text += 'im the' + i 
-    console.log(text);
-}
-
+// let arr = [1,2,3,4]
+// let res = arr.push(100)
+// console.log(res);
+// console.log(arr);

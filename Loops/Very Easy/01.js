@@ -13,20 +13,14 @@
 
 
 
- function Buggy(n){
-    let result = []
-    let final = ''
-    for(let i=1; i<n; i++){
-        final += result.push(i)
-        console.log(final);
-
-    }
+ function Buggy(numbers){
+     let results = []
+     for(let i=1;i<=numbers; i++){
+         results.push(i)
+     }
+     return results
  }
 
-Buggy(6)
-
-
-// let arr = [1,2,3,4]
-// let res = arr.push(100)
-// console.log(res);
-// console.log(arr);
+ console.log(Buggy(6));
+ console.log(Buggy(3));
+ console.log(Buggy(1));

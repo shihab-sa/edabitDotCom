@@ -2,7 +2,7 @@
 // Create a function that takes an array and returns the types of values (data types) in a new array.
 
 // Examples
-// arrayValuesTypes([1, 2, "null", []])
+// 
 // ➞ ["number", "number", "string", "object"]
 
 // arrayValuesTypes(["214", true, false, 2, 2.15, [], null])
@@ -12,12 +12,30 @@
 // ➞ ["number", "string", "string", "object", "object", "boolean", "number"]
 
 
-function arrayValuesTypes(arr){
-    let result = arr.map((type)=>{
-        return type && typeof Number && Array  && Object  && null  && undefined  && Boolean
-    })
 
-    return result
+function arrayValuesTypes(arr){
+
+    if( typeof arr !== 'number'){
+        return arr 
+    }
+    else if(typeof arr !== 'string' ){
+        return arr 
+    }
+    else if( typeof arr !== null){
+        return arr
+    }
+    else if( typeof arr !== 'array'){
+        return arr
+    }
+    else if ( typeof arr !== 'boolean'){
+        return arr
+    }
+    else if ( typeof arr !== undefined){
+        return arr 
+    }
+    else if( typeof arr !== 'object'){
+        return arr
+    }
 
 }
 

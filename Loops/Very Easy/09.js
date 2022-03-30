@@ -16,3 +16,17 @@
 // Remember to return the result.
 
 
+
+
+function addUpTo(n){
+    let sum = 0
+    for(let i=1; i<=n; i++){
+        // console.log(i);
+        sum += i 
+    }
+    return sum
+}
+
+console.log(addUpTo(7));
+console.log(addUpTo(3));
+console.log(addUpTo(10));

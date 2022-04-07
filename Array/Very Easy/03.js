@@ -13,20 +13,20 @@
 
 
 
-// function getVoteCount(arguments){
+ function getVoteCount(arguments){
 
-//     return arguments.upvotes - arguments.downvotes
+    return arguments.upvotes - arguments.downvotes
 
-// }
+ }
 
 
-// let resultVote = getVoteCount({ upvotes: 132, downvotes: 132 })
-// console.log(resultVote );
+ let resultVote = getVoteCount({ upvotes: 132, downvotes: 132 })
+ console.log(resultVote );
 
-// let resultVoteTwo = getVoteCount({ upvotes: 13, downvotes: 0 })
-// console.log(resultVoteTwo);
+ let resultVoteTwo = getVoteCount({ upvotes: 13, downvotes: 0 })
+ console.log(resultVoteTwo);
 
-// let resultVoteThree = getVoteCount({ upvotes: 2, downvotes: 33 })
-// console.log(resultVoteThree);
+let resultVoteThree = getVoteCount({ upvotes: 2, downvotes: 33 })
+ console.log(resultVoteThree);
 
 

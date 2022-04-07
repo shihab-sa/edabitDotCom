@@ -10,9 +10,9 @@
 
 
 
-function pairArray(a,b){
+function pairArray(...arr){
 
-    return [a,b]
+    return [...arr]
 
 }
 
@@ -20,5 +20,5 @@ function pairArray(a,b){
 let result = pairArray(22,10)
 console.log(result);
 
-let result2 = pairArray(51, 21)
+let result2 = pairArray(51, 21,23,55)
 console.log(result2);

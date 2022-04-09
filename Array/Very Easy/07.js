@@ -13,17 +13,17 @@
 // drop([1, 2, 3], 0) ➞ [1, 2, 3]
 
 
-// function drop(arr,value){
+function drop(arr,value){
 
-//    let result = arr.slice(value)
-//    return result
+   let result = arr.slice(value)
+  return result
 
-// }
+}
 
-// console.log(drop([1, 2, 3], 1));
-// console.log(drop([1, 2, 3], 2));
-// console.log( drop([1, 2, 3], 5));
-// console.log(drop([1, 2, 3], 0));
+console.log(drop([1, 2, 3], 1));
+ console.log(drop([1, 2, 3], 2));
+ console.log( drop([1, 2, 3], 5));
+ console.log(drop([1, 2, 3], 0));
 
 
 

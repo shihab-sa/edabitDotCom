@@ -1,8 +1,7 @@
-let arr = [1,2,3]
+let arr = [1,2,3,4,]
 
-
-let res = arr.map((x)=>{
-    return x*2
+let result = arr.map((x)=>{
+    return x * -1 
 })
 console.log(arr);
-console.log(res);
+console.log(result);

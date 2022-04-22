@@ -15,14 +15,23 @@
 // There are no gaps in the expression.
 
 
-function calculator(str){
+// function calculator(str){
 
+//     return eval(str)  // " arithmetic "
+
+// }
+
+
+// console.log(calculator("23+4+5+4+6+7") );
+// console.log(calculator("45-15"));
+// console.log(calculator("13+2-5*2"));
+// console.log(calculator("49/7*2-3+20-40"));
+
+
+
+function classT(str){
     return eval(str)
 
 }
 
-
-console.log(calculator("23+4") );
-console.log(calculator("45-15"));
-console.log(calculator("13+2-5*2"));
-console.log(calculator("49/7*2-3+20-40"));
+console.log( classT("2+4+10/20+3333-10"));

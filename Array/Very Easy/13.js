@@ -10,15 +10,15 @@
 // Notes
 // If the item is not present, return -1.
 
-// function search(arr,indx){
+ function search(arr,indx){
 
-//     return arr.indexOf(indx)
+    return arr.indexOf(indx)
 
-// }
+ }
 
-// console.log(search([1, 5, 3], 5));
-// console.log(search([9, 8, 3], 3));
-// console.log(search([1, 2, 3], 4));
+ console.log(search([1, 5, 3], 5));
+ console.log(search([9, 8, 3], 3));
+ console.log(search([1, 2, 3], 4));
 
 
 // let arr = [1,2,3,4,10]

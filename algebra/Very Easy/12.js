@@ -12,7 +12,7 @@
 
 function imposterFormula(i,p){
 
-    return `"${100 * (i / p)}%"`
+    return `"${100 * (i / p)}%"`  
 
 }
 

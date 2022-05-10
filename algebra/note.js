@@ -7,4 +7,8 @@
 
 // 17 Invert Colors
 
+//19 
+
+// 20 perfect square 
+
 

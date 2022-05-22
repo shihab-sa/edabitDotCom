@@ -13,13 +13,24 @@
 
 
 
-function sumPolygon(n){
-    return (n-2)*180
+// function sumPolygon(n){
+//     return (n-2)*180
+
+// }
+
+// console.log(sumPolygon(3));
+
+// console.log(sumPolygon(4) );
+
+// console.log(sumPolygon(6) );
+
+
+
+function polygon(n){
+
+    return (n - 2) * 180
 
 }
 
-console.log(sumPolygon(3));
-
-console.log(sumPolygon(4) );
-
-console.log(sumPolygon(6) );
+console.log(polygon(4));
+console.log(polygon(10));

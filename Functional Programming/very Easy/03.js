@@ -14,11 +14,21 @@
 
 
 function numArgs(){
+
     return arguments.length
+
 }
 
-console.log(numArgs());
-console.log(numArgs("foo", "bar"));
-console.log(numArgs(true, false));
-console.log(numArgs("foo"));
-console.log(numArgs({}));
+console.log( numArgs("foo") );
+console.log(numArgs(true,false,true) );
+
+
+// function numArgs(){
+//     return arguments.length
+// }
+
+// console.log(numArgs());
+// console.log(numArgs("foo", "bar"));
+// console.log(numArgs(true, false));
+// console.log(numArgs("foo"));
+// console.log(numArgs({}));

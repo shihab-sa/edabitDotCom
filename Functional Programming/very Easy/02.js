@@ -9,15 +9,22 @@
 // nameString("javaScript") ➞ "javaScriptEdabit"
 
 
-function nameString(str){
+// function nameString(str){
 
-    return str.concat('Edabit')
+//     return str.concat('Edabit')
 
+// }
+
+
+// console.log(nameString("Mubashir") );
+
+// console.log(nameString("Matt"));
+
+// console.log(nameString("javaScript") );
+
+
+function nameString(name){
+    return name.concat("Edabit")
 }
 
-
-console.log(nameString("Mubashir") );
-
-console.log(nameString("Matt"));
-
-console.log(nameString("javaScript") );
+console.log(nameString("Mubashir") )

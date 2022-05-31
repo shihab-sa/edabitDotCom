@@ -10,12 +10,44 @@
 
 
 
-function mod(a,b){
+// function mod(a,b){
 
-    return a % b 
+//     return a % b 
+
+// }
+
+// console.log(mod(5,2));
+// console.log(mod(218, 5));
+// console.log( mod(6, 3));
+
+
+
+
+function mod(num1,num2){
+
+    return num1%num2
 
 }
 
-console.log(mod(5,2));
+
+console.log(mod(5, 2));
 console.log(mod(218, 5));
-console.log( mod(6, 3));
+console.log(mod(6, 3));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

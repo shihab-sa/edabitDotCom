@@ -20,24 +20,29 @@
 // Notes
 
 
-function basicCalculator(a,b){
-    let resultOne = a + b 
-    console.log(resultOne );
 
-    let resultTwo = a - b 
-    console.log(resultTwo );
 
-    let resultThree = a / b 
-    console.log(resultThree );
 
-    let resultFour = a * b 
-    console.log(resultFour );
 
-  
-}
 
-basicCalculator(2,  4)
-basicCalculator(6, 5)
-basicCalculator(12, 3)
-basicCalculator(3, 4)
-basicCalculator(1, 0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

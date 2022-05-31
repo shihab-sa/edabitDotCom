@@ -8,14 +8,32 @@
 
 // invertArray([]) ➞ []
 
+// function invertArray(arr){
+//     let result = arr.map((x)=>{
+//         return x*(-1)
+//     })
+
+//     return result 
+
+// }
+
+// console.log(invertArray([1, 2, 3, 4, 5]));
+// console.log(invertArray([1, -2, 3, -4, 5]) );
+
+
+
 function invertArray(arr){
-    let result = arr.map((x)=>{
-        return x*(-1)
+
+    let newArray = []
+    arr.map((myarr)=>{
+        let result = myarr*(-1)
+        newArray.push(result)
     })
 
-    return result 
+    return newArray
 
 }
 
 console.log(invertArray([1, 2, 3, 4, 5]));
-console.log(invertArray([1, -2, 3, -4, 5]) );
+console.log(invertArray([1, -2, 3, -4, 5]));
+console.log(invertArray([]));

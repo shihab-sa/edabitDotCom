@@ -26,11 +26,25 @@
 
 
 
-function polygon(n){
+// function polygon(n){
 
-    return (n - 2) * 180
+//     return (n - 2) * 180
 
-}
+// }
 
-console.log(polygon(4));
-console.log(polygon(10));
+// console.log(polygon(4));
+// console.log(polygon(10));
+
+
+
+// Sum of interior angles = (n − 2) × 180° 
+
+
+
+// function polygon(n){
+//     return (n - 2) * 180
+
+// }
+
+// console.log(polygon(10));
+// console.log(polygon(4));

@@ -17,32 +17,32 @@
 
 // basicCalculator(1, 'x', 0) ➞ null
 // // 'x' is not an operator
-// Notes
 
+function basicCalculator(a,b,c){
+    if(b=="+"){
+        return a + c
+    }
+    else if(b=="-"){
+        return a - c
+    }
+    else if(b=="/"){
+        return a / c
+    }
+    else if(b=="*"){
+        return a * c 
+    }
+    else if(b=="/"){
+        return null
+    }
+    else if(b=="x"){
+        return 'x is not an operator'
+    }
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(basicCalculator(2, '+',  4));
+console.log(basicCalculator(6, '-', 5));
+console.log(basicCalculator(12, '/', 3));
+console.log(basicCalculator(3, '*', 4) );
+console.log(basicCalculator(1, '/', 0));
+console.log(basicCalculator(1, 'x', 0));

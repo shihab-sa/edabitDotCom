@@ -9,3 +9,6 @@
 // counUppercase(["EDAbit", "Educate", "Coding"]) ➞ 5
 
 
+
+// let str = 'shihaB'
+// console.log(str.toUpperCase());

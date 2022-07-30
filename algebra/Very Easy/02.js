@@ -9,11 +9,10 @@
 // addition(-3) ➞ -2
 
 
-function addition(nextNumber){
-
-    let res =  ++nextNumber 
-    return res*10
-    
+function addition(num){
+    // let result = ++num
+    // return result
+    return num++ 
 
 }
 

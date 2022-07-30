@@ -12,3 +12,13 @@
 // 20 perfect square 
 
 
+
+
+
+
+
+
+
+// again practices  1, 2 ,3 ,4
+
+

@@ -9,9 +9,17 @@
 // squared(100) ➞ 10000
 
 
-function squared(sqr){
-    return sqr*sqr
+// function squared(sqr){
+//     return sqr*sqr
 
+// }
+
+// console.log(squared(5));
+// console.log(squared(9));
+// console.log(squared(100));
+
+function squared(sqe){
+    return sqe * sqe
 }
 
 console.log(squared(5));

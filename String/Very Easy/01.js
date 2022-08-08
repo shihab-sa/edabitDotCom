@@ -10,11 +10,17 @@
 // The returned string must be in all lowercase letters.
 // If you get stuck on a challenge, find help in the Resources tab.
 // If you're really stuck, unlock solutions in the Solutions tab.
+// 
+// function hello(str){
+
+//     return str 
+
+// }
+
+// console.log('www.edabit.com');
+
 
 function hello(str){
-
-    return str 
-
+    return str
 }
-
-console.log('www.edabit.com');
+console.log(hello('www.edabit.com'));

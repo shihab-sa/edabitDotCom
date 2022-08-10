@@ -9,4 +9,18 @@
 // divisible(100) ➞ true
 
 
-// baki aca 
+function divisible(num){
+    if(num%2==0){
+        return true
+    }
+    else{
+        return false
+    }
+    
+
+}
+
+
+console.log(divisible(1));
+console.log(divisible(1000));
+console.log(divisible(100));

@@ -17,10 +17,14 @@ function numArgs(){
 
     return arguments.length
 
+    
+
 }
 
 console.log( numArgs("foo") );
 console.log(numArgs(true,false,true) );
+console.log(numArgs({}));
+console.log(numArgs(true, false));
 
 
 // function numArgs(){

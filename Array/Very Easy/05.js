@@ -9,16 +9,29 @@
 // incrementItems([-1, -2, -3, -4]) ➞ [0, -1, -2, -3]
 
 
+// function incrementItems(arr){
+//     let result = arr.map((increment)=>{
+//         return increment + 1
+//     })
+//     return result
+
+// }
+
+// console.log(incrementItems([0, 1, 2, 3]));
+// console.log( incrementItems([2, 4, 6, 8]) );
+// console.log( incrementItems([-1, -2, -3, -4]));
+// console.log( incrementItems([2, 4, 6, 8]) );
+// console.log( incrementItems([-1, -2, -3, -4]));
+
+
 function incrementItems(arr){
-    let result = arr.map((increment)=>{
-        return increment + 1
+
+   let res =  arr.map((x)=>{
+        return x + 1 
     })
-    return result
+
+    return res
 
 }
 
 console.log(incrementItems([0, 1, 2, 3]));
-console.log( incrementItems([2, 4, 6, 8]) );
-console.log( incrementItems([-1, -2, -3, -4]));
-console.log( incrementItems([2, 4, 6, 8]) );
-console.log( incrementItems([-1, -2, -3, -4]));

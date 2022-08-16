@@ -9,9 +9,23 @@
 // getLastItem([true, false, true]) ➞ true
 
 
-function getLastItem(arr){
-    let result = arr[arr.length-1]
+// function getLastItem(arr){
+//     let result = arr[arr.length-1]
 
+//     return result
+
+// }
+
+// console.log(getLastItem([1, 2, 3]));
+// console.log(getLastItem(["cat", "dog", "duck"]));
+// console.log(getLastItem([true, false, true]));
+
+
+
+
+function getLastItem(arr){
+    
+    let result = arr[arr.length-1]
     return result
 
 }

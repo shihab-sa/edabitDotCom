@@ -24,14 +24,18 @@
 // console.log( incrementItems([-1, -2, -3, -4]));
 
 
-function incrementItems(arr){
+// function incrementItems(arr){
 
-   let res =  arr.map((x)=>{
-        return x + 1 
-    })
+//    let res =  arr.map((x)=>{
+//         return x + 1 
+//     })
 
-    return res
+//     return res
 
-}
+// }
 
-console.log(incrementItems([0, 1, 2, 3]));
+// console.log(incrementItems([0, 1, 2, 3]));
+
+
+
+

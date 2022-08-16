@@ -10,14 +10,28 @@
 // Notes
 
 
+// function arrayToString(arr){
+
+//     let result = arr.join('')
+//     return result
+
+// }
+
+
+// console.log(arrayToString([1, 2, 3, 4, 5, 6]));
+// console.log(arrayToString(["a", "b", "c", "d", "e", "f"]));
+// console.log(arrayToString([1, 2, 3, "a", "s", "dAAAA"]));
+
+
+
 function arrayToString(arr){
 
-    let result = arr.join('')
-    return result
+    return arr.join('')
 
 }
 
+console.log(arrayToString([1, 2, 3, 4, 5, 6])); //➞ "123456"
 
-console.log(arrayToString([1, 2, 3, 4, 5, 6]));
-console.log(arrayToString(["a", "b", "c", "d", "e", "f"]));
-console.log(arrayToString([1, 2, 3, "a", "s", "dAAAA"]));
+console.log(arrayToString(["a", "b", "c", "d", "e", "f"])); //➞ "abcdef"
+
+console.log(arrayToString([1, 2, 3, "a", "s", "dAAAA"])); //➞ "123asdAAAA"

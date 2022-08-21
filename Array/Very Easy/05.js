@@ -39,3 +39,17 @@
 
 
 
+function increment(arr){
+   
+   let res = arr.map((x)=>{
+      return x + 1 
+   })
+   return res
+
+  
+
+    
+
+}
+
+console.log(increment([1,2,3,4,5]));

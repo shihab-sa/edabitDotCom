@@ -9,24 +9,15 @@
 // addition(-3) ➞ -2
 
 
-// function addition(num){
-//     let result = ++num
-// return result
-   
 
-// }
+function addition(num){
+    return ++num
 
-// console.log(addition(0));
-// console.log(addition(9));
-// console.log(addition(-3));
+}
 
-let result = 2 
+console.log(addition(0)); // ➞ 1
 
-// for plus 
-// console.log(result++);
-// console.log(++result);
+console.log(addition(9));  //➞ 10
 
-// for minus 
+console.log(addition(-3) ); // ➞ -2
 
-// console.log(--result);
-// console.log(result--);

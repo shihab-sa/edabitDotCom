@@ -8,20 +8,14 @@
 
 // squared(100) ➞ 10000
 
+function squared(num){
 
-// function squared(sqr){
-//     return sqr*sqr
+    return num*num
 
-// }
-
-// console.log(squared(5));
-// console.log(squared(9));
-// console.log(squared(100));
-
-function squared(sqe){
-    return sqe * sqe
 }
 
-console.log(squared(5));
-console.log(squared(9));
-console.log(squared(100));
+console.log(squared(5)); //➞ 25
+
+console.log(squared(9)); //➞ 81
+
+console.log(squared(100)); //➞ 10000

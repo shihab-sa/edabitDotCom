@@ -1,26 +1,8 @@
 // How Edabit Works
-// This is an introduction to how challenges on Edabit work. In the Code tab above you'll see a starter function that looks like this:
 
-// function hello() {
+function hellow(){
 
-// }
-// All you have to do is type return "hello edabit.com" between the curly braces { } and then click the Check button. If you did this correctly, the button will turn red and say SUBMIT FINAL. Click it and see what happens.
+    return 'hello edabit.com'
 
-// Notes
-// The returned string must be in all lowercase letters.
-// If you get stuck on a challenge, find help in the Resources tab.
-// If you're really stuck, unlock solutions in the Solutions tab.
-// 
-// function hello(str){
-
-//     return str 
-
-// }
-
-// console.log('www.edabit.com');
-
-
-function hello(str){
-    return str
 }
-console.log(hello('www.edabit.com'));
+hellow()

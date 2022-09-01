@@ -12,9 +12,13 @@
 
 
 function giveMeSomething(str){
-    return `something ${str}`
+
+    return `somethings ${str}`
+
 }
 
-console.log(giveMeSomething("is better than nothing"));
-console.log(giveMeSomething("Bob Jane"));
-console.log(giveMeSomething("something"));
+console.log(giveMeSomething("is better than nothing")); //➞ "something is better than nothing"
+
+console.log(giveMeSomething("Bob Jane")); //➞ "something Bob Jane"
+
+console.log(giveMeSomething("something")); //➞ "something something"

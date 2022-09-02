@@ -12,6 +12,8 @@
 
 function boolToString(str){
     return str.toString()
+
 }
 
-console.log( boolToString(true));
+console.log(boolToString(true)); //➞ "true"
+console.log(boolToString(false)); //➞ "false"

@@ -11,10 +11,8 @@
 // calculator("49/7*2-3") ➞ 11
 
 
-function calculator(rgx){
-
-    return eval(rgx)
-
+function calculator(str){
+    return eval(str)
 }
 
 

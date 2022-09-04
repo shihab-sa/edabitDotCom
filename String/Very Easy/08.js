@@ -8,6 +8,8 @@
 
 // isEmpty("a") ➞ false
 
+
+
 function isEmpty(str){
     if(str == ""){
         return true
@@ -18,5 +20,6 @@ function isEmpty(str){
 
 }
 
-
+console.log(isEmpty(""));
+console.log(isEmpty("sss"));
 console.log(isEmpty(""));

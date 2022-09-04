@@ -12,12 +12,21 @@
 // All numbers will be positive
 
 
+// function stringInt(str){
+//     let result = parseInt(str)
+//     //console.log(typeof result);
+//     return result
+
+// }
+
+
+// console.log(stringInt("6"));
+
+
 function stringInt(str){
-    let result = parseInt(str)
-    //console.log(typeof result);
-    return result
+
+    return parseInt(str)
 
 }
 
-
-console.log(stringInt("6"));
+console.log(stringInt('44'));

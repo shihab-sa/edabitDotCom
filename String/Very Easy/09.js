@@ -13,10 +13,11 @@
 // Check the Resources tab for info on recursion.
 
 
-
 function length(str){
-    return str.length
-}
 
-console.log(length("apple"));
-console.log(length("make"));
+    return str.length
+
+}
+console.log(length('apple'));
+console.log(length('appledada'));
+console.log(length(''));

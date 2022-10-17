@@ -27,12 +27,3 @@ console.log(numArgs({}));
 console.log(numArgs(true, false));
 
 
-// function numArgs(){
-//     return arguments.length
-// }
-
-// console.log(numArgs());
-// console.log(numArgs("foo", "bar"));
-// console.log(numArgs(true, false));
-// console.log(numArgs("foo"));
-// console.log(numArgs({}));

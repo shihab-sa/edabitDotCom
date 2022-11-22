@@ -24,7 +24,11 @@
 
 
 function nameString(name){
-    return name.concat("Edabit")
+    // return name.concat(`"${"Edabit"}"`)
+
+    return `"${name.concat("Edabit")}"`
 }
 
 console.log(nameString("Mubashir") )
+console.log(nameString("Matt") );
+console.log(nameString("javaScript"));

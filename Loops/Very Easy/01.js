@@ -7,20 +7,24 @@
 // printArray(3) ➞ [1, 2, 3]
 
 // printArray(6) ➞ [1, 2, 3, 4, 5, 6]
-// Notes
-// READ EVERY WORD CAREFULLY, CHARACTER BY CHARACTER!
-// Don't overthink this challenge; it's not supposed to be hard.
 
 
 
- function Buggy(numbers){
-     let results = []
-     for(let i=1;i<=numbers; i++){
-         results.push(i)
-     }
-     return results
- }
 
- console.log(Buggy(6));
- console.log(Buggy(3));
- console.log(Buggy(1));
+
+
+
+
+
+
+function myFun(arr){
+    let newArr = []
+    for(let i=0; i<arr; i++){
+        newArr.push(i+1)
+    }
+    return newArr
+}
+
+console.log(myFun(6))
+console.log(myFun(3))
+console.log(myFun(1))

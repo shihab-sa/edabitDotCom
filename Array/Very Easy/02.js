@@ -9,12 +9,7 @@
 // makePair(512124, 215) ➞ [512124, 215]
 
 
-// function makePair(...arr){
 
-//     return [...arr]
-
-// }
-// console.log(makePair(1, 2,6,9));
 
 function makePair(...arr){
 

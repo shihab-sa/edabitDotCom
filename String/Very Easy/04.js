@@ -11,7 +11,7 @@
 
 
 function boolToString(str){
-    return str.toString()
+    return `"${str.toString()}"`
 
 }
 

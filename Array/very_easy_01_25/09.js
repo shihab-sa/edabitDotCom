@@ -25,7 +25,7 @@
 
 function arrayToString(arr){
 
-    let result =  arr.join('')
+    let result =  `"${arr.join('')}"`
     return  result
 }
 console.log(arrayToString([1, 2, 3, 4, 5, 6])); //➞ "123456"

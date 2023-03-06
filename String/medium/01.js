@@ -37,7 +37,7 @@ function generation(number,char){
     else if(number==1 && char=="m"){
         return 'son'
     }
-    else if(number==1&&char=='f'){
+    else if(number==1 && char=='f'){
         return 'granddougher'
     }
     else if(number==3 && char =='m'){

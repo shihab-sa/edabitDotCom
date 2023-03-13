@@ -10,17 +10,10 @@
 
 
 
-
-
-
-
-
-
-
 function myFun(arr){
     let newArr = []
-    for(let i=0; i<arr; i++){
-        newArr.push(i+1)
+    for(let i=1; i<=arr; i++){
+        newArr.push(i)
     }
     return newArr
 }

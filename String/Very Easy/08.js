@@ -11,7 +11,8 @@
 
 
 function isEmpty(str){
-    if(str == ""){
+   
+    if(str.trim().length ===0 ){
         return true
     }
     else{

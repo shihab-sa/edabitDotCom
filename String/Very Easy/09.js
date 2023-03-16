@@ -15,9 +15,12 @@
 
 function length(str){
 
-    return str.length
+    if(str === ""){
+        return 0 
+    }
+    return 1 + length(str.slice(1))
 
 }
 console.log(length('apple'));
-console.log(length('appledada'));
+console.log(length('make'));
 console.log(length(''));

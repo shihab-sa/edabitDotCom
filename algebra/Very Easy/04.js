@@ -10,7 +10,7 @@
 
 function squared(num){
 
-    return num*num
+    return num ** 2
 
 }
 

@@ -13,6 +13,8 @@
 // The strings can contain white spaces or any type of characters.
 // Bonus: Try solving this without RegEx.
 
+//===================   way 01    ============================ 
+console.log('way 01')
 
 
 function numInStr(arr){

@@ -30,6 +30,8 @@ function arithmeticOperation(str){
     let oper = arr[1]
     let arr2 = parseInt(arr[2])
 
+    // let [num1,ope,num2] = str.split(' ')
+
     switch(oper){
         case "+":
             return arr1 + arr2

@@ -122,33 +122,23 @@ console.log(length5(''));
 
 
 
-
-
-
-// tomorrow 
+// ------------- ============== way 06 ======================= --------------
+console.log('way 06');
 
 
 
 
-// Here's another way to implement the recursive length function in JavaScript:
+ function length(str, i = 0) {
+   return str[i] === undefined ? i : length(str, i + 1); // ternary operator to handle base and recursive cases
+ }
 
-// javascript
-// Copy code
-// function length(str, i = 0) {
-//   return str[i] === undefined ? i : length(str, i + 1); // ternary operator to handle base and recursive cases
-// }
-// Explanation:
 
-// The function takes a string str as input and an optional parameter i that keeps track of the current index (starts at 0). The base case is reached when the value at the current index is undefined, which means that the end of the string has been reached. If the base case is reached, the function returns the current value of i. Otherwise, the function is called recursively with i incremented by 1. This effectively moves the function to the next index in the string, and the process continues until the end of the string is reached.
 
-// Examples:
 
-// javascript
-// Copy code
-// console.log(length("apple"));  // 5
-// console.log(length("make"));  // 4
-// console.log(length("a"));  // 1
-// console.log(length(""));  // 0
+console.log(length("apple"));  // 5
+console.log(length("make"));  // 4
+console.log(length("a"));  // 1
+console.log(length(""));  // 0
 
 
 

@@ -10,8 +10,7 @@
 // detectWord("bEEFGBuFBRrHgUHlNFYaYr") ➞ "burglar"
 
 // detectWord("YFemHUFBbezFBYzFBYLleGBYEFGBMENTment") ➞ "embezzlement"
-// Notes
-// N/A
+
 
 
 function detectWord(str){
@@ -25,7 +24,6 @@ function detectWord(str){
     return newStr
 
 }
-
 console.log(detectWord("UcUNFYGaFYFYGtNUH"));
 console.log(detectWord("bEEFGBuFBRrHgUHlNFYaYr"));
 console.log(detectWord("YFemHUFBbezFBYzFBYLleGBYEFGBMENTment"));

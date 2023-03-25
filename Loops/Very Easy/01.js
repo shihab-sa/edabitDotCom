@@ -46,8 +46,31 @@ console.log('way 02')
  
 // ==========================  way 03
 console.log('way 03')
+function printArray(num) {
+    return [...Array(num)].map((_,y)=>y+1)
+  }
+console.log(printArray(4))
 
 
+
+
+// way 04 
+console.log('way 04')
+
+
+function printArray4(num) {
+    var arr = [];
+    var i = 1;
+    while (i <= num) {
+      arr.push(i);
+      i++;
+    }
+    return arr;
+  }
+
+
+console.log(printArray4(3));
+  
 
 
 

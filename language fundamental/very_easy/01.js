@@ -37,11 +37,9 @@ console.log(hello());
 // ==================================  way 02  =============================  
 console.log('way 02')
 
-
 const hello2=()=>{
     return 'www.edabit.com'
 }
-
 console.log(`The message is ${hello2()}`)
 
 
@@ -55,7 +53,5 @@ console.log('way 03')
 let hello3 = function(){
     return 'www.edabit.com'
 }
-
-
 let msg = hello3()
 console.log(`The Message is ${msg}`)

@@ -9,6 +9,8 @@
 // printArray(6) ➞ [1, 2, 3, 4, 5, 6]
 
 
+// ==========================  way 01 
+console.log('way 01')
 
 function myFun(arr){
     let newArr = []
@@ -21,3 +23,41 @@ function myFun(arr){
 console.log(myFun(6))
 console.log(myFun(3))
 console.log(myFun(1))
+
+
+
+
+// ==========================  way 02 
+console.log('way 02')
+
+
+ function printArray2(num) {
+    return Array.from({length: num},(_, i) => i + 1);
+ }
+
+
+ console.log(printArray2(6))
+ console.log(printArray2(3))
+ console.log(printArray2(1))
+
+
+
+
+ 
+// ==========================  way 03
+console.log('way 03')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

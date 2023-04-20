@@ -14,16 +14,14 @@
 
 
 
-//================================= way 01 =====================
-console.log('way 01')
 
 
-function countTrue(count){
-    let countTrue = 0
-    for(let i=0; i<count.length; i++){
-        if(!false){
-            countTrue += count[i]
-        }
+ function countTrue(count){
+   let countTrue = 0
+   for(let i=0; i<count.length; i++){
+       if(true !==false){
+         countTrue += count[i]
+       }
     }
     return countTrue
 }
@@ -31,3 +29,4 @@ function countTrue(count){
 console.log(countTrue([true, false, false, true, false]));
 console.log(countTrue([false, false, false, false]));
 console.log(countTrue([]) );
+

@@ -125,4 +125,55 @@ console.log(generation(1, "f")); // "daughter"
 console.log(generation(0, "m")); // "me!"
 console.log(generation(4, "m")); // "unknown generation"
 
+
+
+
+
+// way 03 
+
+
+const generationNames3 = {
+    "-3": {
+      "m": "great grandfather",
+      "f": "great grandmother"
+    },
+    "-2": {
+      "m": "grandfather",
+      "f": "grandmother"
+    },
+    "-1": {
+      "m": "father",
+      "f": "mother"
+    },
+    "0": {
+      "m": "me!",
+      "f": "me!"
+    },
+    "1": {
+      "m": "son",
+      "f": "daughter"
+    },
+    "2": {
+      "m": "grandson",
+      "f": "granddaughter"
+    },
+    "3": {
+      "m": "great grandson",
+      "f": "great granddaughter"
+    }
+  }; 
+  
+  function generation3(x, y) {
+    const gender = y === "m" ? "m" : "f";
+    const generationName = generationNames3[Math.abs(x)];
+    return generationName ? generationName[gender] : undefined;
+  }
+
+  
+
+console.log(generation3(2, "f")); // Output: "granddaughter"
+console.log(generation(-3, "m")); // Output: "great grandfather"
+console.log(generation(1, "f")); // Output: "daughter"
+
+
   

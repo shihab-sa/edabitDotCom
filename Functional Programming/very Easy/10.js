@@ -12,7 +12,7 @@
 
 function reverseCapitalize(str){
 
-    return str.toUpperCase()
+  return str.split("").reverse().join("").toUpperCase()
 
 }
 

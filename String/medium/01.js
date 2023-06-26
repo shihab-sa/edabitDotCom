@@ -24,156 +24,57 @@
 // 2	grandson	granddaughter
 // 3	great grandson	great granddaughter
 
-// ===============================  way 01  =====================
-console.log("way 01")
 
-function generation(number,char){
-
-    if(number==2 && char=="f"){
-        return 'granddaughter'
-    }
-    else if(number==2 && char == 'm'){
-        return 'male'
-    }
-    else if(number==1 && char=="m"){
-        return 'son'
-    }
-    else if(number==1 && char=='f'){
-        return 'granddougher'
-    }
-    else if(number==3 && char =='m'){
-        return 'great grandson'
-    }
-    else if(number ==3 && char =='f'){
-        return 'great granddaughter'
-    }
-    else if(number==0 && char =="m"){
-        return 'me'
-    }
-    else if(number==0 && char=="f"){
-        return 'me'
-    }
-    else if(number==-1 && char =="m"){
-        return 'father'
-    }
-    else if(number ==-1 && char =="f"){
-        return 'mother'
-    }
-    else if(number==-2 && char =="m"){
-        return 'grandfather'
-    }
-    else if(number ==-2 && char =="f"){
-        return 'grandmother'
-    }
-    else if(number==-3 && char =="m"){
-        return 'great grandfather'
-    }
-    else if(number==-3 && char =="f"){
-        return 'great grandmother'
-    }
-
-}
-
-
-console.log(generation(2, "f"))
-console.log(generation(-3, "m"));
-console.log(generation(1, "f"));
+const generations = [
+  { generation: -3, male: 'great grandfather', female: 'great grandmother' },
+  { generation: -2, male: 'grandfather', female: 'grandmother' },
+  { generation: -1, male: 'father', female: 'mother' },
+  { generation: 0, male: 'me!', female: 'me!' },
+  { generation: 1, male: 'son', female: 'daughter' },
+  { generation: 2, male: 'grandson', female: 'granddaughter' },
+  { generation: 3, male: 'great grandson', female: 'great granddaughter' }
+];
 
 
 
 
+// function generation(gen,char){
+    
+//     let gens = Math.abs(gen)
+//     let res =  generations[gens]
+    
+//     return gens ? res : char
+  
 
+// }
+// console.log(generation(2, "f") );// ➞ "granddaughter"
+// generation(-3, "m") //➞ "great grandfather"
+// generation(1, "f") //➞ "daughter"
 
-
-// ===============================  way 02  =====================
-console.log("way 02")
 
 
 
 function generation(x, y) {
-    const MALE = 'm';
-    const FEMALE = 'f';
-    const generations = {
-      '-3': { [MALE]: 'great grandfather', [FEMALE]: 'great grandmother' },
-      '-2': { [MALE]: 'grandfather', [FEMALE]: 'grandmother' },
-      '-1': { [MALE]: 'father', [FEMALE]: 'mother' },
-      '0': { [MALE]: 'me!', [FEMALE]: 'me!' },
-      '1': { [MALE]: 'son', [FEMALE]: 'daughter' },
-      '2': { [MALE]: 'grandson', [FEMALE]: 'granddaughter' },
-      '3': { [MALE]: 'great grandson', [FEMALE]: 'great granddaughter' }
-    };
-  
-    if (x === 0) {
-      return 'me!';
-    }
-  
-    const gender = y === MALE ? MALE : FEMALE;
-    const absX = Math.abs(x);
-    const generation = generations[absX];
-  
-    if (!generation) {
-      return 'unknown generation';
-    }
-  
-    return generation[gender];
-  }
+  const generations = [
+    ["me!", "me!"],
+    ["son", "daughter"],
+    ["grandson", "granddaughter"],
+    ["great grandson", "great granddaughter"],
+    ["great grandfather", "great grandmother"],
+    ["grandfather", "grandmother"],
+    ["father", "mother"]
+  ];
 
+  const absX = Math.abs(x);
+  const generationIndex = absX <= 3 ? absX : 6 - absX;
+  const genderIndex = y === "m" ? 0 : 1;
 
-console.log(generation(2, "f")); // "granddaughter"
-console.log(generation(-3, "m")); // "great grandfather"
-console.log(generation(1, "f")); // "daughter"
-console.log(generation(0, "m")); // "me!"
-console.log(generation(4, "m")); // "unknown generation"
+  return generations[generationIndex][genderIndex];
+}
 
-
-
-
-
-// way 03 
-
-
-const generationNames3 = {
-    "-3": {
-      "m": "great grandfather",
-      "f": "great grandmother"
-    },
-    "-2": {
-      "m": "grandfather",
-      "f": "grandmother"
-    },
-    "-1": {
-      "m": "father",
-      "f": "mother"
-    },
-    "0": {
-      "m": "me!",
-      "f": "me!"
-    },
-    "1": {
-      "m": "son",
-      "f": "daughter"
-    },
-    "2": {
-      "m": "grandson",
-      "f": "granddaughter"
-    },
-    "3": {
-      "m": "great grandson",
-      "f": "great granddaughter"
-    }
-  }; 
-  
-  function generation3(x, y) {
-    const gender = y === "m" ? "m" : "f";
-    const generationName = generationNames3[Math.abs(x)];
-    return generationName ? generationName[gender] : undefined;
-  }
-
-  
-
-console.log(generation3(2, "f")); // Output: "granddaughter"
-console.log(generation(-3, "m")); // Output: "great grandfather"
-console.log(generation(1, "f")); // Output: "daughter"
-
-
-  
+console.log(generation(2, "f"));       // Output: "granddaughter"
+console.log(generation(-3, "m"));      // Output: "great grandfather"
+console.log(generation(1, "f"));       // Output: "daughter"
+console.log(generation(0, "m"));       // Output: "me!"
+console.log(generation(-2, "f"));      // Output: "grandmother"
+console.log(generation(3, "m"));       // Output: "great grandson"

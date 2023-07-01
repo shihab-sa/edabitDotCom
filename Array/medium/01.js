@@ -9,21 +9,17 @@
 // countTrue([]) ➞ 0
 // Notes
 // Return 0 if given an empty array.
-// All array items are of the type bool (true or false).
-
-
-
-
+// All array items are of the type bool (true or false)
 
 
  function countTrue(count){
    let countTrue = 0
    for(let i=0; i<count.length; i++){
-       if(true !==false){
-         countTrue += count[i]
-       }
-    }
-    return countTrue
+      if(count[i]==true){
+        countTrue++
+      }
+   }
+   return countTrue
 }
 
 console.log(countTrue([true, false, false, true, false]));

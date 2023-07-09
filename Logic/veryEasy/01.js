@@ -24,6 +24,12 @@
 // N/A
 
 
+// Note : 
+
+// == মানে 2 টায় সমান হতে হবে
+// ===  মানে  2 টায় type of সমান
+// &&  মানে 2 টায় এক হতে হবে
+
 
 
 function and(a,b){
@@ -44,10 +50,7 @@ function and(a,b){
 
 
 console.log(and(false,true)); //➞ false
-
 console.log(and(true, true)); //➞ true
-
 console.log(and(false, true)); //➞ false
-
- console.log(and(false, false));// ➞ false
+console.log(and(false, false));// ➞ false
 

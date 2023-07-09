@@ -27,3 +27,16 @@ console.log(joinPath("portion1", "portion2"));        // Output: portion1/portio
 console.log(joinPath("portion1/", "portion2"));       // Output: portion1/portion2
 console.log(joinPath("portion1", "/portion2"));       // Output: portion1/portion2
 console.log(joinPath("portion1/", "/portion2"));      // Output: portion1/portion2
+
+
+// step by step 
+
+
+function joinPath(str1,str2){
+    
+  if(str1.endsWith("/") && str2.startsWith("/")){
+      return str1 + "/" + str2
+  }
+  
+}
+console.log(joinPath("portion1/", "/portion2"))

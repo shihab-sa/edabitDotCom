@@ -25,52 +25,46 @@
 // 3	great grandson	great granddaughter
 
 
-const generations = [
-  { generation: -3, male: 'great grandfather', female: 'great grandmother' },
-  { generation: -2, male: 'grandfather', female: 'grandmother' },
-  { generation: -1, male: 'father', female: 'mother' },
-  { generation: 0, male: 'me!', female: 'me!' },
-  { generation: 1, male: 'son', female: 'daughter' },
-  { generation: 2, male: 'grandson', female: 'granddaughter' },
-  { generation: 3, male: 'great grandson', female: 'great granddaughter' }
-];
+// Note 
 
-
-
-
-// function generation(gen,char){
-    
-//     let gens = Math.abs(gen)
-//     let res =  generations[gens]
-    
-//     return gens ? res : char
-  
-
+// let data = {
+//   "1":{ 
+//       m:1,
+//       f:2
+//   }
 // }
-// console.log(generation(2, "f") );// ➞ "granddaughter"
-// generation(-3, "m") //➞ "great grandfather"
-// generation(1, "f") //➞ "daughter"
 
+// console.log(data[1])
+
+// এই রকম Object টাইপ ডাটা দেখতে পেলে সেটা এক্সেস নিতে হয় Array Notation এর মাধ্যমে !
 
 
 
 function generation(x, y) {
-  const generations = [
-    ["me!", "me!"],
-    ["son", "daughter"],
-    ["grandson", "granddaughter"],
-    ["great grandson", "great granddaughter"],
-    ["great grandfather", "great grandmother"],
-    ["grandfather", "grandmother"],
-    ["father", "mother"]
-  ];
+  const generations = {
+    "-3": { m: "great grandfather", f: "great grandmother" },
+    "-2": { m: "grandfather", f: "grandmother" },
+    "-1": { m: "father", f: "mother" },
+    "0": { m: "me!", f: "me!" },
+    "1": { m: "son", f: "daughter" },
+    "2": { m: "grandson", f: "granddaughter" },
+    "3": { m: "great grandson", f: "great granddaughter" },
+  };
 
-  const absX = Math.abs(x);
-  const generationIndex = absX <= 3 ? absX : 6 - absX;
-  const genderIndex = y === "m" ? 0 : 1;
-
-  return generations[generationIndex][genderIndex];
+  if (x === 0) {
+    return generations[x][y];
+  } else if (x < 0) {
+    return generations[Math.abs(x)][y.charAt(0)] || "unknown ancestor";
+  } else {
+    return generations[x][y.charAt(0)] || "unknown descendant";
+  }
 }
+
+// Examples
+console.log(generation(2, "f")); // Output: "granddaughter"
+console.log(generation(-3, "m")); // Output: "great grandfather"
+console.log(generation(1, "f")); // Output: "daughter"
+
 
 console.log(generation(2, "f"));       // Output: "granddaughter"
 console.log(generation(-3, "m"));      // Output: "great grandfather"
@@ -78,3 +72,4 @@ console.log(generation(1, "f"));       // Output: "daughter"
 console.log(generation(0, "m"));       // Output: "me!"
 console.log(generation(-2, "f"));      // Output: "grandmother"
 console.log(generation(3, "m"));       // Output: "great grandson"
+   

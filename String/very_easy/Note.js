@@ -1,1 +1,9 @@
-// have finished 1 2 3 4 5 6 7 8 9 10
+function giveMeSomething(a) {
+    return "something " + a;
+  }
+  
+  // Examples
+  console.log(giveMeSomething("is better than nothing")); // Output: "something is better than nothing"
+  console.log(giveMeSomething("Bob Jane")); // Output: "something Bob Jane"
+  console.log(giveMeSomething("something")); // Output: "something something"
+  

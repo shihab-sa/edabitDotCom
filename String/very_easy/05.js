@@ -11,57 +11,6 @@
 // calculator("49/7*2-3") ➞ 11
 
 
-function calculator(expression) {
-    let result = 0;
-    let operator = "+";
-    let currentNumber = "";
-  
-    for (let i = 0; i < expression.length; i++) {
-      const char = expression[i];
-  
-      if (/\d/.test(char)) {
-        currentNumber += char;
-      }
-  
-      if (/[\+\-\*\/]/.test(char) || i === expression.length - 1) {
-        const number = parseInt(currentNumber);
-        currentNumber = "";
-  
-        switch (operator) {
-          case "+":
-            result += number;
-            break;
-          case "-":
-            result -= number;
-            break;
-          case "*":
-            result *= number;
-            break;
-          case "/":
-            result /= number;
-            break;
-        }
-  
-        operator = char;
-      }
-    }
-  
-    return result;
-  }
-  
-  
-console.log(calculator("23+4")); // ➞ 27
-
- console.log(calculator("45-15")); //➞ 30
-
- calculator("45-15") // ➞ 5
-
- calculator("49/7*2-3") // ➞ 11
-
-
-
-
-//  way 02 
 
 
 function calculator(expression) {

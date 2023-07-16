@@ -1,17 +1,24 @@
-function isSmooth(sentence) {
-    const words = sentence.toLowerCase().split(' ');
-  
-     for(let i=0; i<words.length-1; i++){
-         let currentWord = words[i]
-         console.log(currentWord);
+function isSmooth(arr){
+    let word = arr.toLowerCase().split(" ")
+    
+    for(let i=0; i<word.length-1; i++){
+          let cw = word[i]
+          let nw = word[i+1]
+          
+          if(cw[cw.length-1] == nw[0]){
+            return true
+          }
+          
+    }
+    return false
+    
+}
+ 
 
-         let nextWord = words[i+1]
-         console.log(nextWord);
-     }
-   
-  }
-  
-  
-  //console.log(isSmooth("Marta appreciated deep perpendicular right trapezoids")); // true
-  console.log(isSmooth("Someone is outside the doorway")); // false
- // console.log(isSmooth("She eats super righteously")); // true
+
+
+console.log(isSmooth("Marta appreciated deep perpendicular right trapezoids"));// ➞ true
+
+console.log(isSmooth("Someone is outside the doorway")); //➞ false
+
+console.log(isSmooth("She eats super righteously"));// ➞ true

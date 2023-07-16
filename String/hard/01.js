@@ -28,7 +28,6 @@ function isSmooth(sentence) {
     const currentWord = words[i];
     const nextWord = words[i + 1];
     
-   console.log(currentWord,nextWord);
     if (currentWord[currentWord.length - 1] == nextWord[0]) {
       return true;
     }
@@ -38,8 +37,6 @@ function isSmooth(sentence) {
 }
 
 
-//console.log(isSmooth("Marta appreciated deep perpendicular right trapezoids")); // true
-
+console.log(isSmooth("Marta appreciated deep perpendicular right trapezoids")); // true
 console.log(isSmooth("Someone is outside the doorway")); // false
-
-//console.log(isSmooth("She eats super righteously")); // true
+console.log(isSmooth("She eats super righteously")); // true

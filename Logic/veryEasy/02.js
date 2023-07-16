@@ -26,12 +26,6 @@
 
 
 
-// Note : 
-
-// type of চেক করার জন্যে 
-// ===
-// type of
-
 
 function checkEquality(a,b){
      

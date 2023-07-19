@@ -30,10 +30,12 @@
 function differenceWith(firstArray, ...valueArrays) {
     const comparator = valueArrays.pop(); // Get the comparator function
     const values = valueArrays.flat(); // Flatten the value arrays into a single array
+
+    
   
-    return firstArray.filter((arrVal) => {
-      return !values.some((othVal) => comparator(arrVal, othVal));
-    });
+    // return firstArray.filter((arrVal) => {
+    //   return !values.some((othVal) => comparator(arrVal, othVal));
+    // });
   }
   
   // Example usage

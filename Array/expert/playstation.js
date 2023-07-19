@@ -5,10 +5,12 @@ function myFun(str){
     let charCount = {}
     for(let i=0; i<str.length; i++){
         let char = str[i]
-        if(charCount[char]){
-            return { [char]:[charCount[char],i] }  
-        }
-        charCount[char] = i + 10
+       if(charCount[char]){
+          return {
+             [char] : [charCount[char],i]
+          }
+       }
+       charCount[char] = i
              
     }
 

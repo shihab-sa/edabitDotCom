@@ -10,43 +10,26 @@
 // Notes
 // N/A
 
-step 01 
-
-// এই name ডাবল আছে পর পর, সেটা string আকারে, তাহলে যা করতে হবে,  indexOf() lastIndexOf() দিয়ে
-
-// function potatoes(str) {
-//   const lowercaseStr = str.toLowerCase();
-//   const target = "potato"
-
-//   // for single 
-//   let index = lowercaseStr.indexOf(target)
-
-//   //for duplicate 
-//   let index1 = lowercaseStr.lastIndexOf(target)
-//   //let count = 0 
-
-//   console.log('the indexof = ',index)
-//   console.log('the lastindex of is =',index1)
-// }
-
-// console.log(potatoes("potato"));  // ➞ 1
-// console.log(potatoes("potatopotato"));  // ➞ 2
-// console.log(potatoes("potatoapplepotato"));  //➞ 1
 
 
 
 
-Final Problem 
 
+
+
+
+ 
 function potatoes(str) {
     const lowercaseStr = str.toLowerCase();
     const target = 'potato';
     let count = 0;
     
     let index = lowercaseStr.indexOf(target);
+    //console.log("the index is",index);
     while (index !== -1) {
       count++;
       index = lowercaseStr.indexOf(target, index + 1);
+      //console.log("the index is",index);
     }
     
     return count;
@@ -56,4 +39,4 @@ function potatoes(str) {
 
 console.log(potatoes("potato"));  // ➞ 1
 console.log(potatoes("potatopotato"));  // ➞ 2
-console.log(potatoes("potatoapple"));  //➞ 1
+console.log(potatoes("potatoapple"));  //➞ 1'""

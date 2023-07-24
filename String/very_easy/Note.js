@@ -1,9 +1,15 @@
-function giveMeSomething(a) {
-    return "something " + a;
+function calculator(expression){
+  
+
+  for (let i = 0; i < expression.length; i++) {
+    const char = expression[i];
+   console.log(parseInt(char));
   }
-  
-  // Examples
-  console.log(giveMeSomething("is better than nothing")); // Output: "something is better than nothing"
-  console.log(giveMeSomething("Bob Jane")); // Output: "something Bob Jane"
-  console.log(giveMeSomething("something")); // Output: "something something"
-  
+}
+
+// Test cases
+console.log(calculator("23+4")); // Output: 27
+
+
+// parseInt()
+// isNaN()

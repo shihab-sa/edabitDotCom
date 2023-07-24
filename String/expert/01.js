@@ -12,7 +12,7 @@ function caesarCipher(s, k) {
       // Encrypt lowercase letters
       else if (charCode >= 97 && charCode <= 122) {
         var encryptedCharCode = ((charCode - 97 + k) % 26) + 97;
-        result += String.fromCharCode(encryptedCharCode);
+        result += String.fromCharCode(encryptedCharCode); 
       }
       // Non-alphabetic characters remain unchanged
       else {

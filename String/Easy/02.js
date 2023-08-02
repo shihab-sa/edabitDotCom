@@ -25,11 +25,12 @@ function potatoes(str) {
     let count = 0;
     
     let index = lowercaseStr.indexOf(target);
+    
     //console.log("the index is",index);
     while (index !== -1) {
       count++;
       index = lowercaseStr.indexOf(target, index + 1);
-      //console.log("the index is",index);
+      console.log("the index is",index);
     }
     
     return count;

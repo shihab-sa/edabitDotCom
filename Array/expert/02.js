@@ -31,7 +31,9 @@ function recurIndex(str) {
     for (let i = 0; i < str.length; i++) {
       const char = str[i];
       if (charCount[char]) {
-        return { [char]: [charCount[char], i] };
+        return {
+          [char]: [charCount[char], i],   
+        };
       }
       charCount[char] = i;
     }

@@ -1,15 +1,8 @@
-function calculator(expression){
-  
-
-  for (let i = 0; i < expression.length; i++) {
-    const char = expression[i];
-   console.log(parseInt(char));
+function ree(str) {
+  if (str === "") {
+    return 0
   }
+  return  ree(str.slice(1)) + 1
 }
 
-// Test cases
-console.log(calculator("23+4")); // Output: 27
-
-
-// parseInt()
-// isNaN()
+console.log(ree("shihba"));

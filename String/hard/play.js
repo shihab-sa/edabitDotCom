@@ -1,14 +1,19 @@
+function myStr(str) {
 
-
-function reverseOdd(str){
-   let word = str.split(" ")
-   for(let i=0; i<word.length; i++){
-       if(word[i].length%2 !== 0){
-          word[i] = word[i].split("").reverse().join("")
-          
-       }
+   let strss = str.split(" ")
+   
+   for (let i = 0; i < strss.length-1; i++){
+      let findexv = strss[i]
+      let seindexv = strss[i + 1]
+      
+      if (findexv[findexv.length - 1] === seindexv[0]) {
+         return true
+      }
+      else {
+         return false
+      }
+      
    }
-   return word.join(' ')
-} 
-
-console.log(reverseOdd("One two three four") );
+   
+}
+console.log(myStr("Marta appreciated deep perpendicular right trapezoids"));

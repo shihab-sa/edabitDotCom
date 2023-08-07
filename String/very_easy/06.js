@@ -11,12 +11,30 @@
 // greeting("Mubashir") ➞ "Hello, my Love!"
 
 
-function greeting(greet){
-    return `'hellow ${greet}'`
-}
+// function greeting(greet){
+//     return `'hellow ${greet}'`
+// }
 
+// console.log(greeting("Matt")); //➞ "Hello, Matt!"
+
+// console.log(greeting("Helen")); //➞ "Hello, Helen!"
+
+// console.log(greeting("Mubashir")); //➞ "Hello, my Love!"
+
+
+
+function greeting(name) {
+    if (name === "Mubashir") {
+      return "Hello, my Love!";
+    } else {
+      return "Hello, " + name + "!";
+    }
+}
+  
 console.log(greeting("Matt")); //➞ "Hello, Matt!"
 
 console.log(greeting("Helen")); //➞ "Hello, Helen!"
 
 console.log(greeting("Mubashir")); //➞ "Hello, my Love!"
+
+  

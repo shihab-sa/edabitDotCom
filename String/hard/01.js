@@ -18,7 +18,7 @@ There will be no punctuation in each sentence.
 
 */
 
-//-----------------------------------------------------------------------------------------------------
+
 
 function isSmooth(sentence) {
   const words = sentence.toLowerCase().split(' ');

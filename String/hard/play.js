@@ -1,19 +1,14 @@
-function myStr(str) {
-
-   let strss = str.split(" ")
-   
-   for (let i = 0; i < strss.length-1; i++){
-      let findexv = strss[i]
-      let seindexv = strss[i + 1]
-      
-      if (findexv[findexv.length - 1] === seindexv[0]) {
-         return true
-      }
-      else {
-         return false
-      }
-      
+function numInStr(arr){
+    
+   let newArr = []
+   for(let i=0; i<arr.length; i++){
+       for(let j=0; arr[i].length; j++){
+           if(isNaN(arr[i][j])){
+               newArr.push(arr[i])
+           }
+       }
+       return newArr
    }
    
-}
-console.log(myStr("Marta appreciated deep perpendicular right trapezoids"));
+} 
+console.log(numInStr(["1a", "a", "2b", "b"]));

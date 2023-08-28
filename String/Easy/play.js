@@ -1,4 +1,14 @@
-let str = "shihabshihab"
-let tar = "shihab"
+function detectWord(str) {
+    
+    let newStr = ""
+    for (let i = 0; i < str.length; i++){
+        if (str[i] === str[i].toString().toLowerCase()) {
+            newStr += str[i]
+        }
+    }
 
-console.log(str.indexOf(tar,6));
+    return newStr
+}
+
+console.log(detectWord("UcUNFYGaFYFYGtNUH"));
+console.log(detectWord("bEEFGBuFBRrHgUHlNFYaYr"));

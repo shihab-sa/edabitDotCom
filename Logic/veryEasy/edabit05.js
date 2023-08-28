@@ -12,22 +12,16 @@
 // Notes
 // N/A
 
-
-
-
-
-
 function returnNegative(number) {
-    if (number>0) {
-      return -number;
-    } else {
-      return number;
-    }
+  if (number <= 0) {
+    return number;
+  } else {
+    return -number;
   }
-  
-  // Example usage:
-  console.log(returnNegative(4)); // Output: -4
-  console.log(returnNegative(15)); // Output: -15
-  console.log(returnNegative(-4)); // Output: -4
-  console.log(returnNegative(0)); // Output: 0
-  
+}
+
+// Example usage:
+console.log(returnNegative(4)); // Output: -4
+console.log(returnNegative(15)); // Output: -15
+console.log(returnNegative(-4)); // Output: -4
+console.log(returnNegative(0)); // Output: 0

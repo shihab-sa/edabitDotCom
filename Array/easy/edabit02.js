@@ -19,14 +19,14 @@
 
 
 function canNest(arr1, arr2) {
-    // Find the minimum and maximum values in each array
-    const minArr1 = Math.min(...arr1);
-    const maxArr1 = Math.max(...arr1);
-    const minArr2 = Math.min(...arr2);
-    const maxArr2 = Math.max(...arr2);
-  
-    // Check if arr1's min is greater than arr2's min and arr1's max is less than arr2's max
-    return minArr1 > minArr2 && maxArr1 < maxArr2;
+   
+  const arr1Min = Math.min(...arr1)
+  const arr2Min = Math.min(...arr2)
+  const arr1Max = Math.max(...arr1)
+  const arr2Max = Math.max(...arr2)
+
+  return arr1Min > arr2Min && arr1Max < arr2Max
+
   }
   
   // Test cases

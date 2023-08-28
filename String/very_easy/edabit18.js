@@ -7,18 +7,9 @@
 // arrayToString(["a", "b", "c", "d", "e", "f"]) ➞ "abcdef"
 
 // arrayToString([1, 2, 3, "a", "s", "dAAAA"]) ➞ "123asdAAAA"
-// Notes
 
-
-function arrayToString(arr){
-
-   let result = arr.join('')
-   return result
- }
-
-
+function arrayToString(arr) {
+  let result = arr.join("");
+  console.log(typeof result);
+}
 console.log(arrayToString([1, 2, 3, 4, 5, 6]));
- console.log(arrayToString(["a", "b", "c", "d", "e", "f"]));
-console.log(arrayToString([1, 2, 3, "a", "s", "dAAAA"]));
-
-

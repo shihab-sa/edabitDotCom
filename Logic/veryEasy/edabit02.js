@@ -24,23 +24,21 @@
 // If you get stuck on a challenge, find help in the Resources tab.
 // If you're really stuck, unlock solutions in the Solutions tab.
 
+function checkEquality(a, b) {
+  // a === b;
 
+  //   if( typeof a == typeof 1 && typeof b == typeof 1){
+  //      return true
+  //   }
+  //   else{
+  //      return false
+  //   }
 
-
-function checkEquality(a,b){
-     
-   //   if( typeof a == typeof 1 && typeof b == typeof 1){
-   //      return true
-   //   }
-   //   else{
-   //      return false
-   //   }
-   
-    return typeof a === typeof 1 && typeof b === typeof 1 ? true : false
+  return typeof a === typeof 1 && typeof b === typeof 1 ? true : false;
 }
 console.log(checkEquality(1, true)); //➞ false
 // A number and a boolean: the value and type are different.
-console.log(checkEquality(0,"0")); //➞ false
+console.log(checkEquality(0, "0")); //➞ false
 // A number and a string: the type is different.
-console.log(checkEquality(1,  1));// ➞ true
+console.log(checkEquality(1, 1)); // ➞ true
 // A number and a number: the type and value are equal.

@@ -10,18 +10,16 @@
 // Notes
 // N/A
 
-
-
 function arrBetween(num1, num2, arr) {
-    let newArr = []
-    for (let i = 0; i < arr.length; i++){
-        if (arr[i] > num1 && arr[i] < num2) {
-            newArr.push(arr[i])
-        }
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > num1 && arr[i] < num2) {
+      newArr.push(arr[i]);
     }
-    return newArr
+  }
+  return newArr;
 }
 
 console.log(arrBetween(3, 8, [1, 5, 95, 0, 4, 7]));
 
-// arrBetween(3, 8, [1, 5, 95, 0, 4, 7]) ➞ [5, 4, 7] 
+// arrBetween(3, 8, [1, 5, 95, 0, 4, 7]) ➞ [5, 4, 7]

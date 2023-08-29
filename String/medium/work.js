@@ -1,21 +1,10 @@
-function findNemo(sentence) {
-    const words = sentence.split(' ');
-    
-  let findIndex = words.findIndex((w) => w == "Nemo")
-  if (findIndex !== -1) {
-    let indx = findIndex + 1
-    return `i found nemo at ${indx}`
-  }
-  else {
-    return "I can't find Nemo :("
-  }
-  
-  
-   
-  }
-  
-  console.log(findNemo("I am finding Nemo !")); // Output: "I found Nemo at 4!"
-  console.log(findNemo("Nemo is me")); // Output: "I found Nemo at 1!"
-  console.log(findNemo("I Nemo am")); // Output: "I found Nemo at 2!"
-  console.log(findNemo("No Nem here")); // Output: "I can't find Nemo :("
-  
+function areaOfCountry(contryName, area) {
+  let tottalLadmanse = 148940000;
+  let poputaltion = (area / tottalLadmanse) * 100;
+
+  return `${contryName} is ${poputaltion.toFixed(
+    2
+  )}% of the total world's landmass"`;
+}
+
+console.log(areaOfCountry("Russia", 17098242));

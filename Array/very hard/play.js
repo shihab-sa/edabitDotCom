@@ -1,12 +1,2 @@
-let new = []
-
-let data2 = [
-  {
-    name: "shihab",
-    equlity: 2,
-  },
-];
-
-data2.map((x) => {
-    new.push(x)
-});
+let arr = Array(20).fill(20);
+console.log(arr);

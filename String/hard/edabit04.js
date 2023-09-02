@@ -12,15 +12,18 @@
 // There is exactly one space between each word and no punctuation is used.
 
 function reverseOdd(str) {
-    let newStr = str.split(" ")
+  const words = str.split(" ");
 
-    for (let i = 0; i < newStr.length; i++){
-        //console.log(newStr[i].length);
-        if (newStr[i].length % 2 == 0) {
-            console.log(newStr[i]);
-        }
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length % 2 !== 0) {
+      words[i] = words[i].split("").reverse().join("");
     }
-    
+  }
+  return words.join(" ");
 }
-console.log(reverseOdd("One two three four"));
 
+// Test cases
+console.log(reverseOdd("Bananas")); // Output: "sananaB"
+console.log(reverseOdd("One two three four")); // Output: "enO owt eerht four"
+console.log(reverseOdd("Make sure uoy only esrever sdrow of ddo length"));
+// Output: "Make sure you only reverse words of odd length"

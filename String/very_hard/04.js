@@ -13,6 +13,8 @@
 // Notes
 // You have to return the sorted full band names.
 
+
+ 
 function bandNamesSort(bandNames) {
   const articles = ["The", "A", "An"];
 

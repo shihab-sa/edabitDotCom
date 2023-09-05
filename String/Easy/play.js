@@ -1,14 +1,11 @@
-function detectWord(str) {
-    
-    let newStr = ""
-    for (let i = 0; i < str.length; i++){
-        if (str[i] === str[i].toString().toLowerCase()) {
-            newStr += str[i]
-        }
+function charCount(singleChar, strings) {
+  let count = 0;
+  for (let i = 0; i < strings.length; i++) {
+    if (strings[i] == singleChar) {
+      count++;
     }
-
-    return newStr
+  }
+  return count;
 }
 
-console.log(detectWord("UcUNFYGaFYFYGtNUH"));
-console.log(detectWord("bEEFGBuFBRrHgUHlNFYaYr"));
+console.log(charCount("a", "edabait"));

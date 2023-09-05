@@ -25,5 +25,5 @@ function reverseOdd(str) {
 // Test cases
 console.log(reverseOdd("Bananas")); // Output: "sananaB"
 console.log(reverseOdd("One two three four")); // Output: "enO owt eerht four"
-console.log(reverseOdd("Make sure uoy only esrever sdrow of ddo length"));
+// console.log(reverseOdd("Make sure uoy only esrever sdrow of ddo length"));
 // Output: "Make sure you only reverse words of odd length"

@@ -1,14 +1,14 @@
-function numInStr(arr){
-    
-   let newArr = []
-   for(let i=0; i<arr.length; i++){
-       for(let j=0; arr[i].length; j++){
-           if(isNaN(arr[i][j])){
-               newArr.push(arr[i])
-           }
-       }
-       return newArr
-   }
-   
-} 
-console.log(numInStr(["1a", "a", "2b", "b"]));
+function reverseOdd(str) {
+  let w = str.split(" ");
+
+  for (let i = 0; i < w.length; i++) {
+    if (w.length % 2 !== 0) {
+      w[i] = w[i].split("").reverse().join("");
+    }
+  }
+  return w.join("");
+}
+
+// Test cases
+//console.log(reverseOdd("Bananas"));
+console.log(reverseOdd("One two three four"));

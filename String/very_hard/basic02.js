@@ -1,3 +1,5 @@
+// substring()
+
 function convertTime(timeStr) {
   // Split the time string into parts using ":" as a delimiter
   const timeParts = timeStr.split(":");

@@ -1,10 +1,11 @@
-function areaOfCountry(contryName, area) {
-  let tottalLadmanse = 148940000;
-  let poputaltion = (area / tottalLadmanse) * 100;
-
-  return `${contryName} is ${poputaltion.toFixed(
-    2
-  )}% of the total world's landmass"`;
+function testJackpot(str) {
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] == str[i]) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }
 
-console.log(areaOfCountry("Russia", 17098242));
+console.log(testJackpot(["@", "@", "@", "@"]));

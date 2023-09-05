@@ -1,14 +1,12 @@
 function reverseOdd(str) {
-  let w = str.split(" ");
+  let word = str.split(" ");
 
-  for (let i = 0; i < w.length; i++) {
-    if (w.length % 2 !== 0) {
-      w[i] = w[i].split("").reverse().join("");
+  for (let i = 0; i < word.length; i++) {
+    if (word[i].length % 2 !== 0) {
+      word[i] = word[i].split("").reverse().join("");
     }
   }
-  return w.join("");
+  return word.join(" ");
 }
 
-// Test cases
-//console.log(reverseOdd("Bananas"));
-console.log(reverseOdd("One two three four"));
+console.log(reverseOdd("One two three four")); // "enO owt eerht four"

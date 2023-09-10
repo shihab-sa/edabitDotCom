@@ -14,12 +14,26 @@
 // Notes
 // The elements must be exactly identical for there to be a jackpot.
 
-function testJackpot(str) {
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] === str[i]) {
-      return true;
+function testJackpot(resultArray) {
+  // Check if the array has exactly 4 elements
+  if (resultArray.length !== 4) {
+    return false;
+  }
+
+  // Check if all elements are identical by comparing them to the first element
+  for (let i = 1; i < resultArray.length; i++) {
+    if (resultArray[i] !== resultArray[0]) {
+      return false;
     }
   }
+
+  // If all elements are identical, return true
+  return true;
 }
-console.log(testJackpot(["abc", "abc", "abc", "abc"]));
-console.log(testJackpot(["@", "@", "@", "@"]));
+
+// Test cases
+console.log(testJackpot(["@", "@", "@", "@"])); // true
+console.log(testJackpot(["abc", "abc", "abc", "abc"])); // true
+console.log(testJackpot(["SS", "SS", "SS", "SS"])); // true
+console.log(testJackpot(["&&", "&", "&&&", "&&&&"])); // false
+console.log(testJackpot(["SS", "SS", "SS", "Ss"])); // false

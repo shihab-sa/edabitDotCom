@@ -17,7 +17,7 @@
 
 function hasSpaces(inputString) {
   for (let i = 0; i < inputString.length; i++) {
-    if (inputString[i] == 0) {
+    if (inputString[i] === " ") {
       return true;
     }
   }

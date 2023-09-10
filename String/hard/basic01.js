@@ -1,5 +1,5 @@
 function myarr(str) {
-  let myArr = str.split(" ");
+  let myArr = str.split("  ");
   return myArr;
 }
 

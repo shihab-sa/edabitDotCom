@@ -1,7 +1,16 @@
-const mealTime = {
-  brekFast: { hours: 23, minutes: 0 },
-  dinner: { hours: 23, minutes: 0 },
-  launch: { hours: 3, minutes: 0 },
+let mialTime = {
+  breakFast: {
+    hour: 7,
+    minutes: 23,
+  },
+  launch: {
+    hour: 8,
+    minutes: 44,
+  },
+  dinner: {
+    hour: 60,
+    minutes: 50,
+  },
 };
 
-console.log(mealTime.brekFast.minutes);
+console.log(mialTime.breakFast.hour);

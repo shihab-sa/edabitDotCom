@@ -35,3 +35,23 @@ console.log(relationToLuke("Leia")); // "Luke, I am your sister."
 console.log(relationToLuke("Han")); // "Luke, I am your brother in law."
 console.log(relationToLuke("R2D2")); // "Luke, I am your droid."
 console.log(relationToLuke("Obi-Wan Kenobi")); // "I don't know who you are."
+
+// ======================================   way 02
+
+const relations = {
+  "Darth Vader": "father",
+  Leia: "sister",
+  Han: "brother in law",
+  R2D2: "droid",
+};
+
+function relationToLuke(str) {
+  let res = relations[str];
+  if (res) {
+    return `Luke at me ${res}`;
+  }
+}
+
+console.log(relationToLuke("Darth Vader"));
+console.log(relationToLuke("Leia"));
+console.log(relationToLuke("Han"));

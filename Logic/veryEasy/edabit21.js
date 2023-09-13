@@ -15,11 +15,17 @@
 // If you're really stuck, unlock solutions in the Solutions tab.
 
 function repeatString(str, num) {
+  if (typeof str !== "string") {
+    return "not string";
+  }
   let newStr = "";
+
   for (let i = 0; i < num; i++) {
     newStr += str;
   }
+
   return newStr;
 }
 
 console.log(repeatString("Mubashir", 2));
+console.log(repeatString(1990, 7));

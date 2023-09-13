@@ -1,11 +1,10 @@
-function doubleSwap(str, s1, s2) {
+function doubleSwap(str, c1, c2) {
   let newStr = "";
-
   for (let i = 0; i < str.length; i++) {
-    if (str[i] === s1) {
-      newStr += s2;
-    } else if (str[i] === s2) {
-      newStr += s1;
+    if (str[i] === c1) {
+      newStr += c2;
+    } else if (str[i] === c2) {
+      newStr += c1;
     } else {
       newStr += str[i];
     }

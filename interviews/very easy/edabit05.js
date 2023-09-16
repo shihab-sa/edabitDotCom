@@ -14,15 +14,10 @@
 // Don't overthink this challenge; it's not supposed to be hard.
 
 function removeNumbers(str) {
-  let newStr = "";
-  for (let i = 0; i < str.length; i++) {
-    if (str[i] >= 1 && str[i] <= 9) {
-      newStr += str[i];
-    }
-  }
-
-  return newStr;
+  return str
+    .split("")
+    .filter((data) => !parseInt(data))
+    .join("");
 }
 
 console.log(removeNumbers("e1d2a3b4i5t6"));
-console.log(removeNumbers("mubashir1"));

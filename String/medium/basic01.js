@@ -1,6 +1,6 @@
 // অনেক সময়, মিথ্যার কন্ডিশন / লজিক / কিংবা ঘটনা লিখতে হয় ! return false করে দিতে হয় !
 
-// আর বাকি else এ false করে দিতে হয় !
+// আর বাকি else এ true করে দিতে হয় !
 
 function testJackpot(resultArray) {
   // Check if the array has exactly 4 elements

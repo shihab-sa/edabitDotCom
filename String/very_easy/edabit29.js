@@ -10,6 +10,11 @@
 // Notes
 // Assume all input is in lower case and at least two characters long.
 
-function stutter(str) {}
+function stutter(str) {
+
+    for (let i = 0; i < str.length; i++){
+        
+    }
+}
 
 console.log(stutter("incredible"));

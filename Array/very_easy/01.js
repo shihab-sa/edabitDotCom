@@ -30,4 +30,4 @@ function getFirstValue(arr) {
 console.log(getFirstValue([1, 2, 3])); // ➞ 1
 console.log(getFirstValue([80, 5, 100])); // ➞ 80
 console.log(getFirstValue([-500, 0, 50])); // ➞ -500
-console.log(getFirstValue([])); // ➞ "The array is empty"
+console.log(getFirstValue([0])); // ➞ "The array is empty"

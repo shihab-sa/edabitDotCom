@@ -23,34 +23,21 @@
 // Notes
 // N/A
 
-
-// Note : 
+// Note :
 
 // == মানে 2 টায় সমান হতে হবে
 // ===  মানে  2 টায় type of সমান
 // &&  মানে 2 টায় এক হতে হবে
 
-
-
-function and(a,b){
-    // if(a && b){
-    //     return true
-    // }
-    // else{
-    //     return false
-    // }
-    if(a==true && b == true){
-        return true
-    }
-    else{
-        return false
-    }
-
+function and(a, b) {
+  if (a == true && b == true) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-
-console.log(and(false,true)); //➞ false
+console.log(and(false, true)); //➞ false
 console.log(and(true, true)); //➞ true
 console.log(and(false, true)); //➞ false
-console.log(and(false, false));// ➞ false
-
+console.log(and(false, false)); // ➞ false

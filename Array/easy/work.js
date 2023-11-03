@@ -1,7 +1,7 @@
 function minMax(arr) {
+  let newArr = [];
   let max = arr[0];
   let min = arr[0];
-  let newArr = [];
 
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > max) {
@@ -9,11 +9,12 @@ function minMax(arr) {
     }
   }
 
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] < min) {
-      min = arr[i];
+  for (let j = 0; j < arr.length; j++) {
+    if (arr[j] < min) {
+      min = arr[j];
     }
   }
+
   newArr.push(min, max);
   return newArr;
 }

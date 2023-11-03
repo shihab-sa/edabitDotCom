@@ -1,13 +1,6 @@
 function countTrue(arr) {
-  let countTrue = 0;
-
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] !== true) {
-      countTrue++;
-    }
-  }
-
-  return countTrue;
+  let res = arr.filter((x) => x === true);
+  return res.length;
 }
 
-console.log(countTrue([true, false, false, true, false, false, true]));
+console.log(countTrue([true, false, false, true, false, false, true, true]));

@@ -1,10 +1,10 @@
-let objectData = {
-  "-3": {
-    male: "shihab",
-    femal: "habibab",
+let data = {
+  "-1": {
+    name: "shihab",
+    age: 23,
   },
-  4: {
-    male: "shihab",
-    dada: "erwer",
+  "-2": {
+    name: "male",
+    age: 34,
   },
 };

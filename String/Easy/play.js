@@ -1,2 +1,1 @@
-let newStr = "";
-newStr += str[i];
+//console.log(potatoes("shihabpotatoapple")); //➞ 1'""

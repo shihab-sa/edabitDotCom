@@ -24,3 +24,7 @@ let temp = a;
 a = b;
 b = temp;
 return [a, b];
+
+// 05
+
+Math.max();

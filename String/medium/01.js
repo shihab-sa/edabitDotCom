@@ -47,8 +47,8 @@ function generation(x, y) {
 }
 
 // Examples
-console.log(generation(2, "f")); // Output: "granddaughter"
-//console.log(generation(-3, "m")); // Output: "great grandfather"
+// console.log(generation(2, "f")); // Output: "granddaughter"
+console.log(generation(-3, "m")); // Output: "great grandfather"
 //console.log(generation(1, "f")); // Output: "daughter"
 
 //console.log(generation(2, "f"));       // Output: "granddaughter"
@@ -60,27 +60,27 @@ console.log(generation(2, "f")); // Output: "granddaughter"
 
 // -----------------------------    way 02
 
-function generation(x, y) {
-  const generations = {
-    "-3": { m: "great grandfather", f: "great grandmother" },
-    "-2": { m: "grandfather", f: "grandmother" },
-    "-1": { m: "father", f: "mother" },
-    0: { m: "me!", f: "me!" },
-    1: { m: "son", f: "daughter" },
-    2: { m: "grandson", f: "granddaughter" },
-    3: { m: "great grandson", f: "great granddaughter" },
-  };
+// function generation(x, y) {
+//   const generations = {
+//     "-3": { m: "great grandfather", f: "great grandmother" },
+//     "-2": { m: "grandfather", f: "grandmother" },
+//     "-1": { m: "father", f: "mother" },
+//     0: { m: "me!", f: "me!" },
+//     1: { m: "son", f: "daughter" },
+//     2: { m: "grandson", f: "granddaughter" },
+//     3: { m: "great grandson", f: "great granddaughter" },
+//   };
 
-  if (x === 0) {
-    return "me!";
-  } else if (x < 0) {
-    return generations[Math.abs(x)][y];
-  } else {
-    return generations[x][y];
-  }
-}
+//   if (x === 0) {
+//     return "me!";
+//   } else if (x < 0) {
+//     return generations[Math.abs(x)][y];
+//   } else {
+//     return generations[x][y];
+//   }
+// }
 
-// Example usages:
-console.log(generation(2, "f")); // "granddaughter"
-console.log(generation(-3, "m")); // "great grandfather"
-console.log(generation(1, "f")); // "daughter"
+// // Example usages:
+// console.log(generation(2, "f")); // "granddaughter"
+// console.log(generation(-3, "m")); // "great grandfather"
+// console.log(generation(1, "f")); // "daughter"

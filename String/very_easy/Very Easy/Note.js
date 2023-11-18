@@ -37,18 +37,22 @@ if (inputString.length > 0) {
 // Return false if no spaces are found or if the input string is empty
 return false;
 
-//
+// String কোটেশন এর ভিতরে কিছু নাই এর মানে zero
 
 let str = "";
 console.log(str.length);
 
-//
+// True
 
 let str = "";
 console.log(str.length == 0);
 
-// let str = " ";
+// String কোটেশন এর ভিতরে ফাঁকা আছে মানে এর মানে 1 যতটা ফঁাকা ততটা নাম্বার
+
+let str = " ";
 console.log(str.length);
 
 // null = খালি
 // undefined = অনির্ধারিত
+
+// str.plit("").join("")

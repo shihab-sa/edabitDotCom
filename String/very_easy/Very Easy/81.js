@@ -18,4 +18,17 @@
 // Notes
 // Both strings will have the same length.
 
-function hammingDistance() {}
+function hammingDistance(str1, str2) {
+  let distace = 0;
+
+  for (let i = 0; i < str1.length; i++) {
+    if (str1[i] !== str2[i]) {
+      distace++;
+    }
+  }
+  return distace;
+}
+
+console.log(hammingDistance("abcde", "bcdef"));
+console.log(hammingDistance("abcde", "abcde"));
+console.log(hammingDistance("strong", "strung"));

@@ -56,3 +56,5 @@ console.log(str.length);
 // undefined = অনির্ধারিত
 
 // str.plit("").join("")
+
+//  if (str.length <= 2) return str;

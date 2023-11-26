@@ -79,3 +79,5 @@ function spaceMeOut(str) {
 console.log(spaceMeOut("space")); // Output: "s p a c e"
 console.log(spaceMeOut("far out")); // Output: "f a r   o u t"
 console.log(spaceMeOut("elongated musk")); // Output: "e l o n g a t e d   m u s k"
+
+//  if (str.length <= 2) return str;

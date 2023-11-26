@@ -19,10 +19,25 @@
 // N/A
 
 function keyboardMistakes(str) {
-  let newStr = "";
+  let misktaChar = [
+    {
+      A: 4,
+    },
+    {
+      S: 5,
+    },
+    {
+      O: 0,
+    },
+    {
+      L: 1,
+    },
+  ];
+
   for (let i = 0; i < str.length; i++) {
-    if (str[i] == 4) {
-      newStr += str[i] || i;
+    let char = str[i];
+    if (!isNaN(char)) {
+      console.log(misktaChar[char]);
     }
   }
 }

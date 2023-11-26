@@ -13,11 +13,12 @@
 // A CMS is a Content Management System.
 
 function cmsSelector(arr, singleStr) {
-  let upperCase = singleStr.toUpperCase();
   let findCMS = [];
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i].includes(singleStr || upperCase)) {
-      findCMS.push(arr[i]);
+    let findCMSvalue = arr[i].toLowerCase();
+
+    if (findCMSvalue.includes(singleStr)) {
+      findCMS.push(findCMSvalue);
     }
   }
 

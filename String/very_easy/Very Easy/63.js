@@ -17,3 +17,14 @@
 // keyboardMistakes("51NG4P0RE") ➞ "SINGAPORE"
 // Notes
 // N/A
+
+function keyboardMistakes(str) {
+  let newStr = "";
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] == 4) {
+      newStr += str[i] || i;
+    }
+  }
+}
+
+console.log(keyboardMistakes("MUB45H1R"));

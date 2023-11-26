@@ -17,21 +17,17 @@
 // All numbers will be positive integers.
 
 function cleanUpArray(arr) {
-  let newArrEven = [];
-  let newArrOdd = [];
+  let even = [];
+  let odd = [];
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] % 2 == 0) {
-      newArrEven.push(arr[i]);
+      even.push(arr[i]);
+    } else if (arr[i] % 2 !== 0) {
+      odd.push(arr[i]);
     }
   }
 
-  for (let j = 0; j < arr.length; j++) {
-    if (arr[j] % 2 !== 0) {
-      newArrOdd.push(arr[j]);
-    }
-  }
-
-  return [newArrEven, newArrOdd];
+  return [even, odd];
 }
 
 console.log(cleanUpArray(["8"]));

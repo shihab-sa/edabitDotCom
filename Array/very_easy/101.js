@@ -20,10 +20,10 @@
 // For help, check Resources or ask a question in the Comments.
 
 function checkAllEven(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 == 0) return true;
-  }
-  return false;
+ return arr.every((x)=>x%2 == 0)
 }
 
 console.log(checkAllEven([1, 1, 3, 3]));
+console.log(checkAllEven([2, 4, 6]));
+console.log(checkAllEven([5, 6, 8, 10]));
+console.log(checkAllEven([-2, 2, -2, 2]));

@@ -21,6 +21,9 @@
 // Notes
 // All numbers will be single digit positive integers.
 
+
+// ==========================  way 01  ========================== 
+
 function word(str) {
   let wordChar = str.toLowerCase();
 

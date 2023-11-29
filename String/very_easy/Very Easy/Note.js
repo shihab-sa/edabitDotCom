@@ -81,3 +81,15 @@ console.log(spaceMeOut("far out")); // Output: "f a r   o u t"
 console.log(spaceMeOut("elongated musk")); // Output: "e l o n g a t e d   m u s k"
 
 //  if (str.length <= 2) return str;
+
+
+
+// data !== undefined এটির অর্থ : 
+
+যদি ডাটা সমান হয় তাহলে
+data == undefined 
+
+আর সমান না হয়  তাহলে
+
+data !== undefined
+ 

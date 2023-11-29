@@ -1,14 +1,18 @@
-function hasSpaces(str) {
-  if (str.length > 0) {
-    for (let i = 0; i < str.length; i++) {
-      if (str[i] === " ") return true;
-    }
-  }
-  return false;
-}
 
-console.log(hasSpaces("hello"));
-console.log(hasSpaces("hello, world"));
-console.log(hasSpaces(" "));
-console.log(hasSpaces(""));
-console.log(hasSpaces(",./!@#"));
+
+function amazingEdabit(str){
+let word = str.split(" ")
+  
+ for(let i=0; i<word.length; i++){
+  if(word[i] === "edabit"){
+    return word.join(" ")
+  }
+  else if(word[i] !== "amazing"){
+    return `${word.slice(0,2)} not ${word.slice(2)}`
+  }
+ }
+} 
+
+console.log(amazingEdabit("edabit is amazing.") );
+console.log(amazingEdabit("Mubashir is amazing."));
+console.log(amazingEdabit("Infinity is amazing.") );

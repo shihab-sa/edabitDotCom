@@ -13,16 +13,9 @@
 // A CMS is a Content Management System.
 
 function cmsSelector(arr, singleStr) {
-  let findCMS = [];
-  for (let i = 0; i < arr.length; i++) {
-    let findCMSvalue = arr[i].toLowerCase();
 
-    if (findCMSvalue.includes(singleStr)) {
-      findCMS.push(findCMSvalue);
-    }
-  }
-
-  return findCMS;
+   
+  
 }
 
 console.log(cmsSelector(["WordPress", "Joomla", "Drupal"], "w"));

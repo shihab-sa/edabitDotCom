@@ -1,18 +1,13 @@
-
-
-function amazingEdabit(str){
-let word = str.split(" ")
+function wordToNumber(word) {
+  const wordsArray = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
   
- for(let i=0; i<word.length; i++){
-  if(word[i] === "edabit"){
-    return word.join(" ")
-  }
-  else if(word[i] !== "amazing"){
-    return `${word.slice(0,2)} not ${word.slice(2)}`
-  }
- }
-} 
+  const index = wordsArray.indexOf(word);
+  
+  return index !== -1 ? index : -1;
+}
 
-console.log(amazingEdabit("edabit is amazing.") );
-console.log(amazingEdabit("Mubashir is amazing."));
-console.log(amazingEdabit("Infinity is amazing.") );
+// Examples
+console.log(wordToNumber("one"));   // Output: 1
+console.log(wordToNumber("two"));   // Output: 2
+console.log(wordToNumber("nine"));  // Output: 9
+console.log(wordToNumber("invalid")); // Output: -1
